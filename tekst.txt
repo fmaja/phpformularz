@@ -1,0 +1,26 @@
+<?php
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		
+		echo "<h1>Podsumowanie:</h1>";
+		echo "<p><strong>Imię:</strong> " . $_POST['imie'] . "</p>";
+		echo "<p><strong>Data urodzenia:</strong> " . $_POST['data_urodzenia'] . "</p>";
+		echo "<p><strong>Nazwisko:</strong> " .$_POST['nazwisko'] . "</p>";
+		echo "<p><strong>Prawo jazdy:</strong> ";
+		echo isset($_POST['tak']) ? 'Tak' : '';
+		echo isset($_POST['nie']) ? 'Nie' : '';
+		echo "</p>";
+		echo "<p><strong>Ulica:</strong> " .$_POST['ulica'] . "</p>";
+		echo "<p><strong>Hasło:</strong> " . $_POST['haslo'] . "</p>";
+		echo "<p><strong>Numer domu:</strong> " . $_POST['dom'] . "</p>";
+		echo "<p><strong>Płeć:</strong> ";
+		echo isset($_POST['kobieta']) ? 'Kobieta ' : '';
+		echo isset($_POST['mezczyzna']) ? 'Mężczyzna ' : '';
+		echo isset($_POST['inna']) ? 'Inna ' : '';
+		echo isset($_POST['niechce']) ? 'Nie podaję' : '';
+		echo "</p>";
+		echo "<p><strong>Numer mieszkania:</strong> " . $_POST['mieszkanie'] . "</p>";
+		echo "<p><strong>Miasto:</strong> " . $_POST['miasto'] . "</p>";
+		echo "<p><strong>Telefon:</strong> " . $_POST['telefon'] . "</p>";
+		echo "<p><strong>Państwo:</strong> " . $_POST['panstwo'] . "</p>";
+	}
+	?>
